@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV-Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- rubrik sektion -->
+    <div class="CV">CV</div>
+    <div class="hamburgare-meny">
+      <div class="menu-icon" tabindex="0">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="menu-item" id="menu">
+        <!-- Navigation länkar -->
+        <a href="contactMe.html">Contact Me</a>
+        <a href="courses.html">My Courses</a>
+        <a href="#">Apply For NTI Kronhus</a>
+      </div>
+    </div>
+
+    <!-- Main  -->
+    <div class="circle">
+      <span>ADAM CHAUDHRY</span>
+    </div>
+    <div class="container">
+      <div class="left">
+        <!-- min bild  -->
+        <img src="" alt="Bild p Adam">
+      </div>
+      <div class="right">
+        <!-- om mig sektion -->
+        <h1>About Me</h1>
+        <p>Hello, I am a student at NTI Kronhus with focus on computer science.<br> I have experience in C#, JavaScript, and Python and have worked on various projects.
+          <br> I also have experience in video editing and audio mixing.</p>
+        <!-- Contact me button -->
+        <a href="contactMe.html"><button>Contact Me</button></a>
+      </div>
+    </div>
+
+    <!-- JavaScript för hamburgar meny -->
+    <script>
+      const menuIcon = document.querySelector('.menu-icon');
+      const menuItem = document.querySelector('.menu-item');
+      menuIcon.addEventListener('click', function() {
+        menuItem.style.display = menuItem.style.display === 'block' ? 'none' : 'block';
+      });
+    </script>
+  </body>
+</html>

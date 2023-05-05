@@ -1,0 +1,122 @@
+<!-- 
+This is a simple HTML file that displays a table of courses and enjoyment level for each course.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Courses</title>
+	<!-- Add a link to go back to the home page -->
+	<div style="position: fixed; top: 30px; left: 20px;">
+		<a href="CvSida.html" style="background-color: #000000; color: white; padding: 20px 30px; text-align: center; text-decoration: none; display: inline-block; border-radius: 5px; font-size: 16px; cursor: pointer;">Back to Home</a>
+	</div>
+
+	<style>
+	/* Styling for the page */
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #969696;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: #ffffff23;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		margin-top: 0;
+		text-align: center;
+		font-size: 36px;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 20px;
+	}
+
+	table th {
+		background-color: #333;
+		color: #fff;
+		font-size: 20px;
+		padding: 10px;
+		text-align: left;
+	}
+
+	table td {
+		padding: 10px;
+		font-size: 18px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	/* Different styles based on enjoyment level */
+	.like {
+		color:rgb(0, 255, 72);
+		font-weight: bold;
+	}
+
+	.dislike {
+		color: red;
+		font-weight: bold;
+	}
+
+	.love {
+		color:green;
+		font-weight: bold;
+	}
+
+	.super-love {
+		color: green;
+		font-weight: bold;
+	}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1>My Courses</h1>
+		<table>
+			<tr>
+				<th>Course</th>
+				<th>Enjoyment</th>
+			</tr>
+			<tr>
+				<td>Math</td>
+				<td class="dislike">hate it</td>
+			</tr>
+			<tr>
+				<td>Swedish</td>
+				<td class="like">its ok</td>
+			</tr>
+            <tr>
+                <td>Physics</td>
+				<td class="like">I like it</td>
+
+            </tr>
+			<tr>
+				<td>English</td>
+				<td class="like">its ok</td>
+			</tr>
+			<tr>
+				<td>Tillämpad</td>
+				<td class="love">my favorite</td>
+			</tr>
+			<tr>
+				<td>Webutveckling</td>
+				<td class="love">my favorite</td>
+			</tr>
+			<tr>
+				<td>Daodac</td>
+				<td class="super-love">my absolute favorite</td>
+			</tr>
+		</table>
+	</div>
+
+    
+</body>
+</html>

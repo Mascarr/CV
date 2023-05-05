@@ -1,0 +1,161 @@
+/* Reset all margins and paddings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the CV section */
+.CV {
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 50px;
+  padding: 0.5rem 2.2rem;
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  z-index: 2;
+  font-size: 1rem;
+  color: rgb(255, 0, 0);
+}
+
+/* Hamburger menu styles */
+.hamburgare-meny {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+/* Hamburger menu icon styles */
+.hamburgare-meny .menu-icon {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+/* Hamburger menu icon bar styles */
+.hamburgare-meny .menu-icon div {
+  width: 100%;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger menu icon bar styles on hover */
+.hamburgare-meny .menu-icon:hover div:first-child {
+  transform: translateY(-2px);
+}
+
+.hamburgare-meny .menu-icon:hover div:last-child {
+  transform: translateY(2px);
+}
+
+/* Hamburger menu item styles */
+.hamburgare-meny .menu-item {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 150px;
+  text-align: left;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.hamburgare-meny .menu-item a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: rgb(57, 55, 55);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.hamburgare-meny .menu-item a:hover {
+  color: #666;
+}
+/* Circle styles */
+.circle {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: rgb(57, 55, 55);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle span {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+/* Left section styles */
+.left {
+  width: 50%;
+  height: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: #393737;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right h1 {
+  font-size: 1.5rem;
+  margin-top: 50%;
+}
+
+.right p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.right button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
